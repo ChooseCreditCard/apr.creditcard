@@ -2,35 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta http-equiv="refresh"
-        content="0.2; url=https://choose.creditcard/?utm_source=apr.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection">
+  <title>APR.Creditcard – How Credit-Card APR & Interest Work</title>
+  <meta name="description" content="Understand how credit-card APR works: purchase APR, cash advances, grace periods, compounding and penalty rates. Neutral, educational overview of interest mechanics." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://apr.creditcard/" />
 
-  <link rel="canonical"
-        href="https://choose.creditcard/?utm_source=apr.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="APR.Creditcard – Credit-Card APR & Interest Explained" />
+  <meta property="og:description" content="Learn how card issuers calculate interest, apply APR to balances, and handle grace periods, cash advances and penalty rates." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apr.creditcard/" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <meta name="robots" content="noindex,follow" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="APR.Creditcard – Credit-Card APR & Interest Explained" />
+  <meta name="twitter:description" content="Neutral, documentation-style explanation of APR, daily interest, compounding and grace periods on credit cards." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-64FE63JQ3H', {
-      'page_title': 'Redirect apr.creditcard',
-      'page_path': '/redirect/apr.creditcard'
-    });
+    gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <style>
-    html, body {
-      background: #020617;
-      color: #020617;
-      margin: 0;
-      height: 100vh;
-    }
-  </style>
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body></body>
+<body class="bg-slate-950 text-slate-100">
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <div class="brand-title">APR.Creditcard</div>
+          <div class="brand-subtitle">Credit-Card APR &amp; Interest Explained</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      APR.Creditcard
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How Credit-Card APR &amp; Interest Actually Work</h1>
+        <p class="hero-lead">
+          Credit-card APR is often shown as a single percentage, but interest is calculated daily on different types of balances. This page explains purchase APR, cash advances, grace periods and penalty rates in neutral, documentation-style language.
+        </p>
+        <a class="cta" href="https://choose.creditcard/apr/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore the APR &amp; Interest hub
+        </a>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <h2>What Is APR on a Credit Card?</h2>
+      <p>APR (Annual Percentage Rate) is a way of expressing the yearly cost of borrowing on a credit card. It combines the base interest rate with certain fees to show an annualized cost, but interest is usually charged on a daily basis on outstanding balances.</p>
+      <p>Credit cards often have multiple APRs, including separate rates for purchases, cash advances, balance transfers and sometimes promotional offers. Which APR applies depends on how the card is used and whether the statement is paid in full.</p>
+    </section>
+
+    <!-- Mechanics -->
+    <section id="mechanics" class="section">
+      <h2>How Daily Interest and Grace Periods Work</h2>
+      <p>Most issuers calculate interest using a daily periodic rate. They take the APR, divide it by 365 (or 360 in some cases) and apply the result to your average daily balance.</p>
+      <ul class="list">
+        <li><strong>Purchase APR</strong> – applied to unpaid purchase balances after the grace period.</li>
+        <li><strong>Daily periodic rate</strong> – APR divided by the number of days in the year.</li>
+        <li><strong>Average daily balance</strong> – balance tracked across each day in the cycle.</li>
+        <li><strong>Grace period</strong> – if you pay the full statement balance on time, some issuers do not charge interest on new purchases for that cycle.</li>
+      </ul>
+      <p>If you carry a balance, the grace period may not apply to new purchases, meaning interest can start accruing immediately according to the terms in your card agreement.</p>
+    </section>
+
+    <section class="section">
+      <h2>Purchase APR, Cash Advances &amp; Other Rates</h2>
+      <p>Many cards advertise one headline APR, but there can be several underlying rates:</p>
+      <ul class="list">
+        <li><strong>Purchase APR</strong> – for everyday card purchases.</li>
+        <li><strong>Cash-advance APR</strong> – for ATM withdrawals or similar transactions, often higher and with no grace period.</li>
+        <li><strong>Balance-transfer APR</strong> – for balances moved from other cards, sometimes promotional for a limited period.</li>
+        <li><strong>Penalty APR</strong> – a higher rate that may apply after late payments, according to your agreement.</li>
+      </ul>
+      <p>Each rate can have its own conditions, such as when it starts, how long it lasts and what events can cause it to change.</p>
+    </section>
+
+    <section class="section">
+      <h2>Variable APRs and Reference Rates</h2>
+      <p>Many credit-card APRs are variable. That means they are linked to a reference rate (for example a central bank or market rate) plus a margin decided by the issuer.</p>
+      <p>When the reference rate moves, your APR may move as well, usually with a notice period defined in the terms. The margin component is tied to your card agreement and may reflect factors like underwriting criteria and product type.</p>
+    </section>
+
+    <section class="section">
+      <h2>Compounding, Fees and Total Cost of Borrowing</h2>
+      <p>Interest charges are added to your balance, and future interest may be calculated on this higher amount if the balance is not paid. Some products also include fees such as annual fees, cash-advance fees or balance-transfer fees.</p>
+      <p>APR is designed to give a standardized view of costs, but it does not automatically capture every possible scenario. The detailed breakdown of how interest and fees are applied is set out in the pricing and terms documentation for the card.</p>
+    </section>
+
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>Compare APR &amp; Interest-Related Features</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Purchase APR</td>
+              <td>Range, whether variable, how it can change</td>
+              <td>Defines the cost of carrying everyday purchase balances.</td>
+            </tr>
+            <tr>
+              <td>Grace Period Rules</td>
+              <td>When the grace period applies, when it is lost</td>
+              <td>Influences whether new purchases accrue interest immediately.</td>
+            </tr>
+            <tr>
+              <td>Cash-Advance APR &amp; Fees</td>
+              <td>Rate, per-transaction fees, grace-period treatment</td>
+              <td>Cash advances are often significantly more expensive than purchases.</td>
+            </tr>
+            <tr>
+              <td>Penalty APR</td>
+              <td>Trigger events, duration, reversion conditions</td>
+              <td>Shows how the rate may change after late or missed payments.</td>
+            </tr>
+            <tr>
+              <td>Balance-Transfer Terms</td>
+              <td>Intro APR, duration, transfer fees</td>
+              <td>Determines how long transferred balances keep their promotional rate.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        For structured comparisons of APR ranges and terms across different products, visit
+        <a href="https://choose.creditcard/apr/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
+      </p>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore Related Cost &amp; Pricing Microsites</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card" href="https://nofee.creditcard/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=cluster_nofee">
+          <h3>NoFee.Creditcard</h3>
+          <p>Cards with a focus on fees, annual costs and pricing structures.</p>
+        </a>
+        <a class="cluster-card" href="https://securedcard.creditcard/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=cluster_secured">
+          <h3>SecuredCard.Creditcard</h3>
+          <p>How secured cards use deposits, limits and APR in rebuild scenarios.</p>
+        </a>
+        <a class="cluster-card" href="https://creditbuilder.creditcard/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=cluster_creditbuilder">
+          <h3>CreditBuilder.Creditcard</h3>
+          <p>Cards designed to help rebuild files and manage utilization.</p>
+        </a>
+        <a class="cluster-card" href="https://poorcreditcard.creditcard/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=cluster_poor">
+          <h3>PoorCreditCard.Creditcard</h3>
+          <p>Educational content for higher-risk APR and rebuild products.</p>
+        </a>
+        <a class="cluster-card" href="https://badcreditcard.creditcard/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=cluster_bad">
+          <h3>BadCreditCard.Creditcard</h3>
+          <p>How higher APRs and fees are structured in subprime segments.</p>
+        </a>
+        <a class="cluster-card" href="https://fin.creditcard/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=cluster_fin">
+          <h3>Fin.Creditcard</h3>
+          <p>Modern payment features, virtual cards and digital-first pricing.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Collection section -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        APR.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site explains a single concept in clear, factual language and then connects you to independent comparison tools.
+      </p>
+      <p class="small">
+        We do not issue cards. We summarize documentation, describe interest mechanics and link to external providers where you can read full terms yourself.
+      </p>
+      <p class="small">
+        This site is informational only and does not provide financial, investment, tax or legal advice. Always rely on official card agreements and consider seeking independent advice if needed.
+      </p>
+
+      <!-- APR hub snippet -->
+      <p class="text-xs text-slate-500 mt-6">
+        For a broader view of how APR compares across products, visit the
+        <a href="https://choose.creditcard/apr/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=hub_apr"
+           class="font-medium hover:text-slate-900">
+          APR &amp; Interest hub
+        </a>
+        on <a href="https://choose.creditcard/" class="font-medium hover:text-slate-900">Choose.Creditcard</a>.
+      </p>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to See APR in Context?</h2>
+      <p class="small">
+        Use APR.Creditcard to understand the mechanics behind the numbers — then visit the APR &amp; Interest hub on Choose.Creditcard to see how different products structure their pricing.
+      </p>
+      <a class="cta" href="https://choose.creditcard/apr/?utm_source=apr.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to the APR &amp; Interest hub
+      </a>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+    </p>
+  </footer>
+</body>
 </html>
